@@ -62,8 +62,6 @@ int main() {
         num--;
     }
 
-    cout.setf(ios::fixed);
-    cout.precision(2);
     cout<<sales.getResult()<<endl;
     
     
