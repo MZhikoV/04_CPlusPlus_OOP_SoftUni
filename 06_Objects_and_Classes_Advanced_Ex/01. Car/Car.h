@@ -21,18 +21,18 @@ class Car {
     int cYear;
 
     public:
-    Car (string make, string model, int produced): cBrand(make), cModel(model), cYear(produced) {};
+    Car (const string & make, const string & model, const int & produced): cBrand(make), cModel(model), cYear(produced) {};
     
-    string GetBrand() const {
-        return this->cBrand;
+    const string & GetBrand() const {
+        return cBrand;
     }
 
-    string GetModel() const {
-        return this->cModel;
+    const string & GetModel() const {
+        return cModel;
     }
 
-    int GetYear() const {
-        return this->cYear;
+    const int & GetYear() const {
+        return cYear;
     }
 
 };

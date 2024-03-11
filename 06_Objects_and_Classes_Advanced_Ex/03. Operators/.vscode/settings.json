@@ -45,7 +45,6 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "typeinfo": "cpp",
-        "map": "cpp",
-        "xstring": "cpp"
+        "map": "cpp"
     }
 }
