@@ -12,7 +12,7 @@ std::ostream& operator<<(std::ostream& out, const Word& w) {
 void printWordCounts(const std::string &line) {
 	std::istringstream lineIn(line);
 	std::set<Word> words;
-	std::string wordStr;
+	std::string wordStr; 
 	while (lineIn >> wordStr) {
 		words.insert(Word(wordStr));
 	}
@@ -32,6 +32,8 @@ int main() {
 
 	std::getline(std::cin, line);
 	printWordCounts(line);
+
+	system("pause");
 
 	return 0;
 }
