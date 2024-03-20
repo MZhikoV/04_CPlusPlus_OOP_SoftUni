@@ -84,37 +84,6 @@ int main() {
         cout<<l.getWordsContaining(inpC)<<endl;   
      }
 
-
-
-    // istringstream inp(input);
-
-    // vector<char> inclC;
-    // char inpC;
-    // while (cin>>inpC && inpC!='.') {
-    //     inclC.push_back(inpC);
-    // }
-
-    // vector<set<string>> words;
-    // int idx=0;
-
-    // for (vector<char>::iterator it1=inclC.begin(); it1!=inclC.end(); it1++) {
-    //     string currWord;
-    //     while (inp>>currWord) {
-    //         for(size_t c=0; c<currWord.size(); c++) {
-    //             if (tolower(currWord[c])==tolower(*it1)) {
-    //                 words.
-    //             }
-    //         }
-    //     }
-    //     if (it1!=inclC.end()) {
-    //         idx++;
-    //     }
-    // }
-    
-
-
-
-
     system("pause");
     return 0;
 }

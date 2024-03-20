@@ -46,8 +46,6 @@
         "streambuf": "cpp",
         "typeinfo": "cpp",
         "map": "cpp",
-        "xstring": "cpp",
-        "xtree": "cpp",
         "charconv": "cpp",
         "cstring": "cpp",
         "ctime": "cpp",
@@ -73,7 +71,9 @@
         "xlocnum": "cpp",
         "xloctime": "cpp",
         "xmemory": "cpp",
+        "xstring": "cpp",
         "xtr1common": "cpp",
+        "xtree": "cpp",
         "xutility": "cpp"
     }
 }

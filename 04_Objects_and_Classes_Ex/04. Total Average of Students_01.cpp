@@ -79,7 +79,8 @@ int main()
         cout<<currStudent.printStudent();
     }
 
-    cout<<fixed<<setprecision(1)<<averageStudents(studentsData)<<endl;
+   // cout<<fixed<<setprecision(1)<<
+    cout<<averageStudents(studentsData)<<endl;
 
     system("pause");
     return 0;
