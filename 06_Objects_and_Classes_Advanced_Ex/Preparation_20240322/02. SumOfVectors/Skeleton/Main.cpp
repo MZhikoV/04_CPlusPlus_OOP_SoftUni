@@ -47,6 +47,6 @@ int main()
 
     PrintSum(vec3);
 
-
+system("pause");
     return 0;
 }
