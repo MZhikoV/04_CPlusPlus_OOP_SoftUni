@@ -66,5 +66,7 @@ int main() {
 
 	std::cout << joined << std::endl;
 
+	system("pause");
+	
 	return 0;
 }
