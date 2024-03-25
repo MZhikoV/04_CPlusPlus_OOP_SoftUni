@@ -76,6 +76,7 @@
         "xtree": "cpp",
         "xutility": "cpp",
         "iomanip": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "print": "cpp"
     }
 }
