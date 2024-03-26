@@ -72,5 +72,7 @@ int main() {
 		std::cout << "[invalid input]" << std::endl;
 	}
 
+	system("pause");
+
 	return 0;
 }

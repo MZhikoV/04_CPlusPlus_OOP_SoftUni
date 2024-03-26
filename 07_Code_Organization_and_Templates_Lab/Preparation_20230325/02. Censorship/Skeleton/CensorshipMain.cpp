@@ -30,5 +30,7 @@ int main() {
 		std::cout << blockedItem << " ";
 	}
 
+	system ("pause");
+
 	return 0;
 }
