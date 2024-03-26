@@ -12,13 +12,12 @@ template <typename T> class LessThan {
 
 template <typename T, typename Comparator> class Reverse {
 
-    Comparator comparator;
-
     public:
-    bool operator<(const Reverse & other) const {
-        return false;
+    Comparator comparator;
+    bool operator()(const T & first, const T & second) const {
+        return !comparator(first,second);
     }
-}
+};
 
 
 
