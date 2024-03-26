@@ -28,5 +28,7 @@ int main() {
 		std::cout << note << " ";
 	}
 
+	system("pause");
+
 	return 0;
 }
