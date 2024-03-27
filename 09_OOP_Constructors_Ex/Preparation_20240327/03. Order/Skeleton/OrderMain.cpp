@@ -28,5 +28,7 @@ int main() {
 		delete companyPtr;
 	}
 
+	system("pause");
+
 	return 0;
 }
