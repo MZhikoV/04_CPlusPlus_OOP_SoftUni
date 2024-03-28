@@ -37,5 +37,8 @@ int main() {
 		properties = readStringsLine();
 	}
 
+
+	system("pause");
+
 	return 0;
 }
