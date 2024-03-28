@@ -33,5 +33,7 @@ int main() {
 	std::getline(std::cin, line);
 	printWordCounts(line);
 
+	system("pause");
+
 	return 0;
 }
