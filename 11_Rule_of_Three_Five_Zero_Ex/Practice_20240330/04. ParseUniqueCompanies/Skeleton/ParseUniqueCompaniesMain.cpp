@@ -34,6 +34,7 @@ int main() {
 		std::getline(std::cin, line);
 	}
 
+
 	int uniquenessCriteria;
 	std::cin >> uniquenessCriteria;
 
@@ -58,6 +59,8 @@ int main() {
 		std::cout << c->toString() << std::endl;
 	}
 	delete[] companies;
+
+	system("pause");
 
 	return 0;
 }

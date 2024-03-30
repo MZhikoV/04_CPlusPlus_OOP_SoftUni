@@ -31,7 +31,7 @@ int main() {
 	std::vector<std::string> properties = readStringsLine();
 
 	int sinceLastRemoval = 0;
-	while (properties[0] != "end") {
+	while (properties[0] != "End") {
 		companies.push_back(new Company(std::stoi(properties[0]), properties[1]));
 
 		sinceLastRemoval++;
@@ -49,6 +49,8 @@ int main() {
 		std::cout << c->toString() << std::endl;
 		delete c;
 	}
+
+	system("pause");
 
 	return 0;
 }
