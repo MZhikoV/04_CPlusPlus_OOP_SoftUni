@@ -24,7 +24,11 @@ Company * get(size_t num) {
     return companies[num];
 };
 
-
+~ArrayOfPointers() {
+    for (Company* curr:companies) {
+        delete curr;
+    };
+}
 
 
 };
