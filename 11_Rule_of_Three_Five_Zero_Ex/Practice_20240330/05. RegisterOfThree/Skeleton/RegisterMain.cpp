@@ -72,5 +72,7 @@ int main() {
 
 	std::cout << result << std::endl;
 
+	system ("pause");
+
 	return 0;
 }
