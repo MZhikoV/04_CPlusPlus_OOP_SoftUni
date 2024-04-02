@@ -56,7 +56,7 @@ while (num--) {
 
 bool isFirst=true;
 for (auto prod:towns) {
-    cout<<prod.first<<" <- "<<fixed<<setprecision(2)<<prod.second<<endl;
+    cout<<prod.first<<" -> "<<fixed<<setprecision(2)<<prod.second<<endl;
     // if (isFirst) {
     //     isFirst=false;
     // }
