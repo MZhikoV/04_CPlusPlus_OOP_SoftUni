@@ -42,5 +42,7 @@ int main() {
 		std::cout << type << ": " << lecture[type] << std::endl;
 	}
 
+	system("pause");
+
 	return 0;
 }

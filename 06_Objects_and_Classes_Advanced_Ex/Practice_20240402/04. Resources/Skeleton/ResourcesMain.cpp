@@ -40,5 +40,7 @@ int main() {
 		std::cout << pair.first << ": " << pair.second << std::endl;
 	}
 
+	system ("pause");
+
 	return 0;
 }
