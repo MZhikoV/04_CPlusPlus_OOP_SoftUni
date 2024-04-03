@@ -10,6 +10,7 @@ template <typename T> void printVector(vector<T> & forPrint) {
     for ( T & curr:forPrint) {
         cout<<curr<<' ';
     };
+    cout<<endl;
 };
 
 
