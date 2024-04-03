@@ -9,5 +9,7 @@ int main() {
 	cin >> input;
 	cout << input << endl;
 
+	system ("pause");
+
 	return 0;
 }
