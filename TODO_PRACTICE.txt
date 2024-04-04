@@ -4,3 +4,5 @@
 	06.
 	07.
 
+07_Code_Organization_and_Templates_Lab
+	05.Sorting
