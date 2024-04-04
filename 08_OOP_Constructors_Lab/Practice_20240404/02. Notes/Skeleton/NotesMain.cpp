@@ -5,8 +5,7 @@
 #include "NoteName.h"
 #include "SolfegeNoteNaming.h"
 
-template<typename Naming>
-class NoteParser {
+template<typename Naming> class NoteParser {
 	Naming translator;
 public:
 	NoteName translate(const std::string& noteText) const {
