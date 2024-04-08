@@ -50,5 +50,7 @@ int main() {
 		cout << companyPtrs[i]->toString() << endl;
 	}
 
+	system("pause");
+
 	return 0;
 }

@@ -6,3 +6,11 @@
 
 07_Code_Organization_and_Templates_Lab
 	05.Sorting
+
+08_OOP_Constructors_Lab
+	02. Notes -> https://www.youtube.com/watch?v=X0KY4M9AAzE
+	03. Sort Vectors
+
+09_OOP_Constructors_Ex
+	02. Find -> See solution from Practice_20240404
+	03.Order -> See solution from Practice_20240404

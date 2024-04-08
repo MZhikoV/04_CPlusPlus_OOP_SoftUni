@@ -3,20 +3,26 @@
 
 #include "Company.h"
 
+#include <algorithm>
 
-//sortBy(companyPtrs, companyPtrs + numCompanies, lessThanByName);
-
-//Company** companyPtrs = new Company*[numCompanies];
-//int numCompanies = lines.size();
-
-/*
-bool lessThanById(const Company& a, const Company& b) {
-	return a.getId() < b.getId();
+template <typename Iterator>
+void swap(Iterator a, Iterator b) {
+    auto temp = *a;
+    *a = *b;
+    *b = temp;
 }
 
-bool lessThanByName(const Company& a, const Company& b) {
-	return a.getName() < b.getName();
+template <typename Iterator, typename Comparator>
+void sortBy(Iterator begin, Iterator end, Comparator comp) {
+    for (Iterator i = begin; i != end; ++i) {
+        for (Iterator j = begin; j != end - 1; ++j) {
+            if (!comp(**j, **(j + 1))) {
+                swap(j, j + 1);
+            }
+        }
+    }
 }
-*/
+
+
 
 #endif //SORTBY_H
