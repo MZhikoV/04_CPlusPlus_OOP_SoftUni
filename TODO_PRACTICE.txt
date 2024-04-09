@@ -14,3 +14,4 @@
 09_OOP_Constructors_Ex
 	02. Find -> See solution from Practice_20240404
 	03.Order -> See solution from Practice_20240404
+	04.Profit -> Using pointer as iterator

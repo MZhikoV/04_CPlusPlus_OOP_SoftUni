@@ -23,6 +23,12 @@ void sortBy(Iterator begin, Iterator end, Comparator comp) {
     }
 }
 
+//sortBy(companyPtrs, companyPtrs + numCompanies, lessThanByName);
+
+/*
+    int numCompanies = lines.size();
+	Company** companyPtrs = new Company*[numCompanies];
+*/
 
 
 #endif //SORTBY_H
