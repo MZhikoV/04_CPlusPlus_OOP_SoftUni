@@ -32,8 +32,7 @@ public:
 	}
 };
 
-template<typename T, typename Generator>
-void readGenerateWrite() {
+template<typename T, typename Generator> void readGenerateWrite() {
 	Sequence<T, Generator> sequence;
 
 	int numToGenerate;

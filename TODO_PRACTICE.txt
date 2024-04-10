@@ -17,3 +17,5 @@
 	04.Profit -> Using pointer as iterator
 	05.Register!!!
 	06.Word !!! -> static declaration of map container!!!
+	07. Dividible45
+	08.Sequence
