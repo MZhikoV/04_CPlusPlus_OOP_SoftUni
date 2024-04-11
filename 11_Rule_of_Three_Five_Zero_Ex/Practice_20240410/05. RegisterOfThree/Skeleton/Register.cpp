@@ -44,7 +44,13 @@
 		return *this;
 	};
 
-	
-	Register::Register(const Register& other)=default;
+
+
+
+	//Register::Register(const Register& other)=default;
+
+	Register::Register(const Register& other) : numAdded(0),companiesArray(nullptr) {
+		*this=other;
+	};
 
 
