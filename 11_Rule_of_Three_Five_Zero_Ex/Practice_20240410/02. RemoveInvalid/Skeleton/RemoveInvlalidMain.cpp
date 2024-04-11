@@ -50,5 +50,6 @@ int main() {
 		delete c;
 	}
 
+	system("pause");
 	return 0;
 }

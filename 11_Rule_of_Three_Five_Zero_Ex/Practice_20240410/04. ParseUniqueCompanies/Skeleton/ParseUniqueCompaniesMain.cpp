@@ -59,5 +59,7 @@ int main() {
 	}
 	delete[] companies;
 
+	system("pause");
+	
 	return 0;
 }

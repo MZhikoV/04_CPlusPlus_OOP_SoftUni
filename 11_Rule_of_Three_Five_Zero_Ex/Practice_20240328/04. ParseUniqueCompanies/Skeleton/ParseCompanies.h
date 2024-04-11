@@ -34,7 +34,7 @@ while (istr>>id) {
 
 Company * returnArr=new Company[companies.size()];
 
-for (size_t numCompanies=0; numCompanies<companies.size(); numCompanies++) {
+for (numCompanies=0; numCompanies<companies.size(); numCompanies++) {
     returnArr[numCompanies]=companies[numCompanies];
 };
 
