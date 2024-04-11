@@ -19,3 +19,5 @@
 	06.Word !!! -> static declaration of map container!!!
 	07. Dividible45
 	08.Sequence
+11_Rule_of_three_Five_Zero_Ex
+	05.RegisterOfThree -> See copy assignment, copy constructor and destructor definitions
