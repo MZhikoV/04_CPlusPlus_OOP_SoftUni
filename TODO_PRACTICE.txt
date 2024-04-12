@@ -21,3 +21,13 @@
 	08.Sequence
 11_Rule_of_three_Five_Zero_Ex
 	05.RegisterOfThree -> See copy assignment, copy constructor and destructor definitions
+
+
+
+
+
+17_Abstract_Classes_Ex
+	01.Filters!
+	02.IDs
+	04.Extractor
+	07.Warcraft!!!!!!!!!!!!!!
