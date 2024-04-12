@@ -59,6 +59,8 @@ int main()
 
     std::cout << matrices[sortedIndexesBySize[0].second];
 
+    system("pause");
+
     return 0;
 }
 
