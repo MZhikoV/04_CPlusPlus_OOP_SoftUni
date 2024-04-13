@@ -43,6 +43,6 @@ int main() {
   // converting back from the Vehicle*, to show that there is no slicing
   Airplane *planePtr = (Airplane*)v;
   std::cout << planePtr->toString() << std::endl; // calls Airplane::toString()
-
+system("pause");
   return 0;
 }

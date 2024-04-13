@@ -19,8 +19,14 @@
 	06.Word !!! -> static declaration of map container!!!
 	07. Dividible45
 	08.Sequence
+
 11_Rule_of_three_Five_Zero_Ex
 	05.RegisterOfThree -> See copy assignment, copy constructor and destructor definitions
+	06. ArrayOfPointers -> don't forget the destructor!!
+	07.List -> todo
+
+13_Inheritance_Ex
+	01. SortPointers -> to see solution from Practice_20240412 !!!
 
 
 

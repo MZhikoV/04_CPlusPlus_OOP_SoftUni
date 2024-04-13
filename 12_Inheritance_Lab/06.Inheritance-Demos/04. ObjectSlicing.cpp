@@ -38,6 +38,6 @@ int main() {
   Vehicle v = Airplane(250, 10000, 0);
 
   std::cout << v.toString() << std::endl;
-
+system("pause");
   return 0;
 }

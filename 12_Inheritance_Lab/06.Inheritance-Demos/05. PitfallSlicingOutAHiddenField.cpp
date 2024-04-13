@@ -22,6 +22,6 @@ int main() {
 	Vehicle v = Airplane(250, 10000, 0);
 
 	std::cout << v.speed << std::endl;
-
+system("pause");
 	return 0;
 }
