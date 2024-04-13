@@ -25,8 +25,10 @@
 	06. ArrayOfPointers -> don't forget the destructor!!
 	07.List -> todo
 
-13_Inheritance_Ex
+13_Inheritance_Ex - todo all
 	01. SortPointers -> to see solution from Practice_20240412 !!!
+	02. Ranges -> to read DonAngel solution for better practices
+	03. MaxSumArray -> to do //no output seen, STL inheritance !!!
 
 
 
