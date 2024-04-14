@@ -1,11 +1,11 @@
 06_Objects_and_Classes_Advanced_Ex
 	04.Resources -> reading the enum type
-	05.Lectures
+	05.Lectures !!!
 	06.
 	07.
 
 07_Code_Organization_and_Templates_Lab
-	05.Sorting
+	05.Sorting -> "bool operator ()" overloads
 
 08_OOP_Constructors_Lab
 	02. Notes -> https://www.youtube.com/watch?v=X0KY4M9AAzE
