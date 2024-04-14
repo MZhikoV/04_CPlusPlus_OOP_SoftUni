@@ -19,5 +19,7 @@ int main() {
 		std::cout << v << std::endl;
 	}
 
+	system ("pause");
+
 	return 0;
 }
