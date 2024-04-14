@@ -1,5 +1,5 @@
 06_Objects_and_Classes_Advanced_Ex
-	04.Resources
+	04.Resources -> reading the enum type
 	05.Lectures
 	06.
 	07.
