@@ -41,5 +41,7 @@ int main() {
 
 	cout << getProfitReport(fromInclusive, toInclusive, profitCalculatorsByCompany) << endl;
 
+	system("pause");
+
 	return 0;
 }
