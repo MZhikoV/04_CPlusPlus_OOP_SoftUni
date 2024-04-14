@@ -5,6 +5,7 @@
 
 using namespace std;
 
+
 class Book {
 
     size_t id;
@@ -32,6 +33,9 @@ public:
 
 };
 
+
+
+
 #include "input.h"
 
 int main(void) {
@@ -54,7 +58,7 @@ int main(void) {
         string borrower;
         switch(command) {
             case 1:
-                print<Book>(books[bookID], cout);
+                //print<Book>(books[bookID], cout);
                 break;
             case 2:
                 cin >> borrower;
@@ -67,7 +71,9 @@ int main(void) {
         }
     }
 
-    print<map<size_t, Book> *>(&books, cout);
+    print<Books *>(&books, cout);
 
+
+    system ("pause");
     return 0;
 }

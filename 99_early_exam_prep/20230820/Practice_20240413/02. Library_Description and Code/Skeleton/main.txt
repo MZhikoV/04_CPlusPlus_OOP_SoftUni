@@ -1,0 +1,132 @@
+#include <string>
+#include <map>
+#include <iostream>
+#include <sstream>
+
+using namespace std;
+
+
+class Book {
+
+    size_t id;
+    string title;
+    string author;
+
+    string borrower;
+
+public:
+    Book() = default;
+
+    Book(size_t id, istream & istr) : id(id) {
+
+        getline(istr, author);
+        getline(istr, title);
+
+    }
+
+    size_t getId() const { return id; }
+    const string & getTitle() const { return title; }
+    const string & getAuthor() const { return author; }
+    const string & getBorrower() const { return borrower; }
+
+    void setBorrowed(const string & reader = "") { borrower = reader; }
+
+};
+
+//------------------------------------------------------------------------------------
+
+
+void read( map<size_t, Book> & books, istream & istr) {
+       string input;
+       while (istr>>input && input!="end") {
+       size_t currID=stoi(input);
+       istr.ignore();
+
+       Book currBook (currID,istr);
+
+       books[currID]=currBook;
+       };
+};
+
+
+
+void print( const Book & book, ostream & ostr) {
+
+ostr<<"book"<<book.getId()<<" \""<<book.getTitle()<<"\" by "<<book.getAuthor()<<" is ";
+if (book.getBorrower()=="") {
+    ostr<<"\"available\"";
+}
+else {
+    ostr<<"\"borrowed by "<<book.getBorrower()<<"\"";
+}
+    ostr<<endl;
+};
+
+void borrow(  Book & book, const string & borrower) {
+
+    book.setBorrowed(borrower);
+    print (book,cout);
+
+};
+
+void borrow(  Book & book) {
+    book.setBorrowed("");
+    print (book,cout);
+
+//todo
+
+};
+
+// void print(Book* books, ostream & ostr) {
+//     ostr<<"-----"<<endl;
+//     ostr<<"total books: "<<books.size();
+
+//     for (const auto& [id, book] : *books) {
+//         print(book, ostr);
+//     }
+// };
+
+//------------------------------------------------------------------------------------
+
+
+//#include "input.h"
+
+int main(void) {
+
+    typedef map<size_t, Book> Books;
+    Books books;
+
+    read(books, cin);
+
+    while(true) {
+
+        size_t command;
+        cin >> command;
+        if (command == 0)
+            break;
+
+        int bookID;
+        cin >> bookID;
+
+        string borrower;
+        switch(command) {
+            case 1:
+                print(books[bookID], cout);
+                break;
+            case 2:
+                cin >> borrower;
+                borrow(books[bookID], borrower);
+                break;
+            case 3:
+                borrow(books[bookID]);
+                break;
+            
+        }
+    }
+
+   // print(const & books, cout);
+
+
+    system ("pause");
+    return 0;
+}
