@@ -15,7 +15,7 @@
 	02. Find -> See solution from Practice_20240404
 	03.Order -> See solution from Practice_20240404 !!! "findif solution"
 	04.Profit -> Using pointer as iterator
-	05.Register!!!
+	05.Register!!! ->definition of pointer array in constructor
 	06.Word !!! -> static declaration of map container!!!
 	07. Dividible45
 	08.Sequence
