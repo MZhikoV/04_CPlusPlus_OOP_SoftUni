@@ -3,7 +3,8 @@
 
 #include <list>
 #include <set>
-#include <string>
+
+using namespace std;
 
 void removeDuplicates(std::list<Company*> ::iterator it, std::list<Company *>& companies) {
 

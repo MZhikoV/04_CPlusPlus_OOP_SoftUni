@@ -28,5 +28,7 @@ int main() {
 		updateParticles(particles);
 	}
 
+	system("pause");
+
 	return 0;
 }

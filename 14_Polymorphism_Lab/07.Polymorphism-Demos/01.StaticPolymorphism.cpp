@@ -39,5 +39,7 @@ int main() {
 	Airplane* planePtr = static_cast<Airplane*>(v); // converting back from the Vehicle*, to show that there is no slicing
 	std::cout << planePtr->toString() << std::endl; // calls Airplane::toString()
 
+
+	system ("pause");
 	return 0;
 }
