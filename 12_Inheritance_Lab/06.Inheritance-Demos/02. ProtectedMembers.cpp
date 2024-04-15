@@ -45,9 +45,11 @@ int main() {
   Airplane airplane(700, 10000, 90);
 
   // compilation error - speed is protected, can't be accessed from outside
-  //std::cout << car.speed << std::endl;
+  // std::cout << car.speed << std::endl;
   std::cout << car.toString() << std::endl;
   std::cout << airplane.toString() << std::endl;
+
+  system("pause");
 
   return 0;
 }

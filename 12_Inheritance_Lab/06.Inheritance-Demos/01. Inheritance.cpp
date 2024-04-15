@@ -47,5 +47,7 @@ int main() {
   std::cout << car.toString() << std::endl;
   std::cout << airplane.toString() << std::endl;
 
+  system("pause");
+
   return 0;
 }
