@@ -26,10 +26,22 @@
 	};
 
 	Register& Register::operator=(const Register& other) {
+		
+		Company * newArray=new Company[other.numAdded];
+		std::copy(other.companiesArray, other.companiesArray+other.numAdded, newArray);
+		
+		if (this->companiesArray) {
+			delete[] this->companiesArray;
+		};
+		this->companiesArray=newArray;
 		this->numAdded=other.numAdded;
-		this->companiesArray=new Company [numAdded-1];
-		this->companiesArray=other.companiesArray;
+
 		return *this;
+		
+		// this->numAdded=other.numAdded;
+		// this->companiesArray=new Company [numAdded-1];
+		// this->companiesArray=other.companiesArray;
+		// return *this;
 	};
 
 
