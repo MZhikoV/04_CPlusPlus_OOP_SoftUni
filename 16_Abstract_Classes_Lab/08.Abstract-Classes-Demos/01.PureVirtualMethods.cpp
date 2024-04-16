@@ -55,5 +55,7 @@ int main() {
 	writeHello(consoleWriter);
 	std::cout << consoleWriter.getLog() << std::endl;
 
+
+system ("pause");
 	return 0;
 }

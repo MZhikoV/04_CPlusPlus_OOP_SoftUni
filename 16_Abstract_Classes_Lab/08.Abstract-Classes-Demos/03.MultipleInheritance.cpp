@@ -59,6 +59,6 @@ int main() {
 	Plant& asPlant = o;
 
 	std::cout << asPlant.getInfo() << std::endl;
-
+system("pause");
 	return 0;
 }
