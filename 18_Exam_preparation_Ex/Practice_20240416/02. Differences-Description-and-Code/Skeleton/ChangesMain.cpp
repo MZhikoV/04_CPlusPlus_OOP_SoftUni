@@ -35,5 +35,7 @@ int main() {
 
 	printVector(differences);
 
+	system("pause");
+
 	return 0;
 }
