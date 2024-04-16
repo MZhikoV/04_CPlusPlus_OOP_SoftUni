@@ -81,6 +81,7 @@
         "xhash": "cpp",
         "chrono": "cpp",
         "forward_list": "cpp",
-        "fstream": "cpp"
+        "fstream": "cpp",
+        "climits": "cpp"
     }
 }

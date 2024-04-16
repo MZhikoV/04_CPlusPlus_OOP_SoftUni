@@ -10,7 +10,7 @@ class SumAggregator:public StreamAggregator {
         SumAggregator(std::istringstream & istr): StreamAggregator(istr) {aggregationResult=0;};
 
         virtual void aggregate(int next) override {
-            StreamAggregator::aggregate(next);
+      //      StreamAggregator::aggregate(next);
 		    aggregationResult+=next;
 	    };
 };

@@ -53,5 +53,7 @@ int main() {
 		throw std::exception();
 	}
 
+	system ("pause");
+
 	return 0;
 }

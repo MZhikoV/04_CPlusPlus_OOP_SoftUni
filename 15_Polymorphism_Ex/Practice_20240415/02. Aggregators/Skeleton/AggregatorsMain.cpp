@@ -36,5 +36,7 @@ int main() {
 
 	delete aggregator;
 
+	system("pause");
+
 	return 0;
 }
