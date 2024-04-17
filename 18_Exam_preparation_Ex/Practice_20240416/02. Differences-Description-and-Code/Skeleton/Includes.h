@@ -32,7 +32,7 @@ std::istream & operator>>(std::istream & istr, City& city) {
 };
 
 
-std::ostream & operator<<(std::ostream & ostr, CityDiff & city) {
+std::ostream & operator<<(std::ostream & ostr, const CityDiff & city) {
     if(city.diffP.first.getName()==city.diffP.second.getName()) {
         ostr<<city.diffP.first.getName()<<" ("<<city.diffP.first.getCensusYear()
         <<" vs. "<<city.diffP.second.getCensusYear()<<")"<<std::endl;
@@ -42,7 +42,7 @@ std::ostream & operator<<(std::ostream & ostr, CityDiff & city) {
         <<city.diffP.second.getName()<<" ("<<city.diffP.second.getCensusYear()<<")"<<std::endl;
     };
     ostr<<"population: ";
-    if (city.difference>0) {ostr<<'+';}
+    if (city.difference>=0) {ostr<<'+';}
     ostr<<city.difference<<std::endl;
     return ostr;
 };

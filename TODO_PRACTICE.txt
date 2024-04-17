@@ -35,12 +35,8 @@
 	02. Aggregators -> todo read carefuly main cpp files
 	03. TypedStream ->careful reading, see "hidden" hints,
 
-
-
-
-
 17_Abstract_Classes_Ex
-	01.Filters!
+	01.Filters!!! -> create separate classes, create new instances, return type *
 	02.IDs
 	04.Extractor
-	07.Warcraft!!!!!!!!!!!!!!
+	07.Warcraft!!!!!!!!!!!!!! -> create instance for spells and type logic
