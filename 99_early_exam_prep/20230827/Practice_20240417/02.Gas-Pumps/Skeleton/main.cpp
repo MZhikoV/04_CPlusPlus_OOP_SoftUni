@@ -54,5 +54,7 @@ int main() {
     for(auto c = cmd_list.begin(); c!=cmd_list.end(); c++)
         (*c)->process();
 
+    system("pause");
+
     return 0;
 }
