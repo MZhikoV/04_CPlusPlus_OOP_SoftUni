@@ -22,5 +22,7 @@ int main() {
   }
   commandExecutor.printWinner();
 
+  system("pause");
+
   return EXIT_SUCCESS;
 }
