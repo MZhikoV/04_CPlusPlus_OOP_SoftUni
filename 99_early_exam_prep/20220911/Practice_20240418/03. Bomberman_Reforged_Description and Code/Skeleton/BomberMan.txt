@@ -1,0 +1,96 @@
+#ifndef BomberMan_h
+#define BomberMan_h
+
+#include <vector>
+
+class BomberMan {
+
+  void callme(std::vector<std::string> &battlefield) {
+    for(int i=0; i<battlefield.size();i++) {
+            std::cout<<battlefield[i]<<std::endl;
+        };
+    };
+
+int bombPower =0;
+std::vector<std::vector<char>> comp;
+
+public:
+
+void bombPowerUp() {
+    bombPower++;
+};
+
+void bombPowerDown() {
+    bombPower--;
+    if (bombPower<0) {
+        bombPower=0;
+    };
+};
+
+int getBombPower() const {
+    return bombPower;
+};
+
+int placeBomb(const std::vector<std::string> & gettedFeildData, int bombRow, int bombCol) {
+    int result=0;
+
+    std::vector<std::string> battlefield=gettedFeildData;
+
+            callme(battlefield);
+
+        if ((bombRow)>=0) {
+        std::string current=battlefield[bombRow];
+        result+=current[bombCol]-'0';
+        current[bombCol]='0';
+        battlefield[bombRow]=current;
+        callme(battlefield);
+        };
+
+    //rows
+    for (int i=1;i<=bombPower;i++) {
+        if ((bombRow-i)>=0) {
+        std::string current=battlefield[bombRow-i];
+        result+=current[bombCol]-'0';
+        current[bombCol]='0';
+        battlefield[bombRow]=current;
+        callme(battlefield);
+        };
+
+        if ((bombRow+i)<battlefield.size()) {
+        std::string current=battlefield[bombRow+i];
+        result+=current[bombCol]-'0';
+        current[bombCol]='0';
+        battlefield[bombRow]=current;
+        callme(battlefield);
+        };
+
+        if ((bombCol-i)>=0) {
+        std::string current=battlefield[bombRow];
+        result+=current[bombCol-i]-'0';
+        current[bombCol]='0';
+        battlefield[bombRow]=current;
+        callme(battlefield);
+        };
+
+        if ((bombCol+i)<battlefield[bombRow].size()) {
+        std::string current=battlefield[bombRow];
+        result+=current[bombCol+i]-'0';
+        current[bombCol]='0';
+        battlefield[bombRow]=current;
+        callme(battlefield);
+        };
+
+        
+    };
+
+    Field f;
+    f.populateField(battlefield);
+    return result;
+};
+
+
+
+};
+
+
+#endif
