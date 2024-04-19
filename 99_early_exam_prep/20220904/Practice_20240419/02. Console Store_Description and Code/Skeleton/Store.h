@@ -5,15 +5,15 @@
 #include <iostream>
 #include <map>
 
-struct OOPS{
+class OOPS{
 
+public:
 int price;
 int quality;
 int gen;
 int entry;
 
-public:
-    OOPS(int price, int quality, int generation, int entryP) : price(price), quality(quality), gen(gen), entry(entryP) {};
+    OOPS(int price, int quality, int generation, int entryP) : price(price), quality(quality), gen(generation), entry(entryP) {};
 };
 
 
@@ -62,15 +62,16 @@ public:
             
             if (!pss.empty()) {
 
-            for (size_t i=0;i<pss.size();i++) {
-                if((pss[i].entry)==(entryX-1))
+                for (size_t i=0;i<pss.size();i++) {
+                    if((pss[i].entry)==(entryP-1)){
 
 
-            std::cout<<"Removing: PS with generation "<<pss[i].gen <<",price: "<<pss[i].price<<", quality: "<<pss[i].quality<<std::endl;
+                        std::cout<<"Removing: PS with generation "<<pss[i].gen <<", price: "<<pss[i].price<<", quality: "<<pss[i].quality<<std::endl;
 
-            pss.erase(pss.begin()+i);
-            entryP--;
-            };
+                    pss.erase(pss.begin()+i);
+                    entryP--;
+                    };
+                };
             };
             
         }
@@ -78,16 +79,15 @@ public:
 
             if (!xbx.empty()) {
 
-            
             for (size_t i=0;i<xbx.size();i++) {
-                if((xbx[i].entry)==(entryX-1))
-            
+                    if((xbx[i].entry)==(entryX-1)){            
 
-            std::cout<<"Removing: Xbox with price: "<<xbx[i].price<<", quality: "<<xbx[i].quality<<std::endl;
+                        std::cout<<"Removing: Xbox with price: "<<xbx[i].price<<", quality: "<<xbx[i].quality<<std::endl;
 
-            xbx.erase(xbx.begin()+i);
-            entryX--;
-            };
+                    xbx.erase(xbx.begin()+i);
+                    entryX--;
+                    };
+                };
             };
         }
 
@@ -229,7 +229,7 @@ public:
                 // std::cout<<"Printing all PS data"<<std::endl;
             for (auto & curr:pss) {
 
-                std::cout<<"PS with generation "<<curr.gen <<",price: "<<curr.price<<", quality: "<<curr.quality<<std::endl;
+                std::cout<<"PS with generation "<<curr.gen <<", price: "<<curr.price<<", quality: "<<curr.quality<<std::endl;
             };
             };
         }
