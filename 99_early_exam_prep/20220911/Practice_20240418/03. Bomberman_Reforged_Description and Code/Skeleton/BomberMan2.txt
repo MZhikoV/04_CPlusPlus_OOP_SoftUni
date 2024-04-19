@@ -2,19 +2,20 @@
 #define BomberMan_h
 
 #include <vector>
-#include <string>
-#include<iostream>
 
 class BomberMan {
 
-  void callme(std::vector<std::string> &battlefield) {
-    for(int i=0; i<battlefield.size();i++) {
-            std::cout<<battlefield[i]<<std::endl;
+  void callme() {
+    for(int i=0; i<10;i++) {
+        for (int j=0;j<10;j++)
+            std::cout<<comp[i][j];
         };
+        std::cout<<std::endl;
     };
 
 int bombPower =0;
-std::vector<std::vector<char>> comp;
+//std::vector<std::vector<char>> comp{'0'};
+char comp[10][10] {};
 
 public:
 
@@ -33,64 +34,60 @@ int getBombPower() const {
     return bombPower;
 };
 
-int placeBomb(const std::vector<std::string> & gettedFeildData, int bombRow, int bombCol) {
+int placeBomb(std::vector<std::string> & gettedFeildData, int bombRow, int bombCol) {
     int result=0;
 
     std::vector<std::string> battlefield=gettedFeildData;
 
-           // callme(battlefield);
+            //callme(battlefield);
 
         if ((bombRow)>=0) {
         std::string current=battlefield[bombRow];
-        result+=(current[bombCol]-'0');
-        current[bombCol]='0';
-        battlefield[bombRow]=current;
-        //callme(battlefield);
-        //battlefield[bombRow][bombCol]=0;
-
+        if (comp[bombRow][bombCol]!='X') {
+        result+=current[bombCol]-'0';
+        comp[bombRow][bombCol]=='X';
+        };
+        
         };
 
     //rows
     for (int i=1;i<=bombPower;i++) {
         if ((bombRow-i)>=0) {
         std::string current=battlefield[bombRow-i];
+        if (comp[bombRow-i][bombCol]!='X') {
         result+=current[bombCol]-'0';
-        current[bombCol]='0';
-        battlefield[bombRow-i]=current;
-        //callme(battlefield);
+        comp[bombRow-i][bombCol]=='X';
+        };
         };
 
         if ((bombRow+i)<battlefield.size()) {
         std::string current=battlefield[bombRow+i];
+        if (comp[bombRow+i][bombCol]!='X') {
         result+=current[bombCol]-'0';
-        current[bombCol]='0';
-        battlefield[bombRow+i]=current;
-       // callme(battlefield);
+        comp[bombRow+i][bombCol]=='X';
+        };
         };
 
         if ((bombCol-i)>=0) {
         std::string current=battlefield[bombRow];
+        if (comp[bombRow][bombCol-i]!='X') {
         result+=current[bombCol-i]-'0';
-        current[bombCol-i]='0';
-        battlefield[bombRow]=current;
-       // callme(battlefield);
+        comp[bombRow][bombCol-i]=='X';
+        };
         };
 
         if ((bombCol+i)<battlefield[bombRow].size()) {
         std::string current=battlefield[bombRow];
+        if (comp[bombRow][bombCol+i]!='X') {
         result+=current[bombCol+i]-'0';
-        current[bombCol+i]='0';
-        battlefield[bombRow]=current;
-       // callme(battlefield);
+        comp[bombRow][bombCol-i]=='X';
+        };
         };
 
         
     };
+    callme();
 
-    const_cast<std::vector<std::string> &>(gettedFeildData)=battlefield;
-
-    // Field f;
-    // f.populateField(battlefield);
     return result;
 };
 

@@ -11,7 +11,7 @@ int main() {
   third.append(first.getContent()).append(second.getContent());
   third.printContent();
 
-  system("pause");
+  // system("pause");
 
   return 0;
 }
