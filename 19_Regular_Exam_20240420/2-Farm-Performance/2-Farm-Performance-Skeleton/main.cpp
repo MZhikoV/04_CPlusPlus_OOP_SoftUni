@@ -66,5 +66,7 @@ int main() {
         counter++;
     }
 
+system("pause");
+
     return 0;
 }
