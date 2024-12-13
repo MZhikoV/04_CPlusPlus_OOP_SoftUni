@@ -60,5 +60,7 @@ int main() {
 
 	std::cout << Company::CREATED_COMPANIES << std::endl;
 
+	system("pause");
+
 	return 0;
 }
