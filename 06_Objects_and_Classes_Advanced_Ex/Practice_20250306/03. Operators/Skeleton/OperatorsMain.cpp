@@ -36,5 +36,7 @@ int main() {
 	std::cout << formattedLines;
 	std::cout << std::endl;
 
+	system("pause");
+
 	return 0;
 }
